@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwoTypes</title>
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="twoTypes.css">
+
+    <!-- Tasks CSS -->
+    <link rel="stylesheet" href="tasks.css">
+
+    <!-- Notes CSS -->
+    <link rel="stylesheet" href="notes.css">
+
+    <!-- Google Material -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <header>
+        <button class="headerButtons">
+            <span class="material-symbols-rounded">
+                dataset
+            </span>
+        </button>
+        <button class="headerButtons">
+            <span class="material-symbols-rounded">
+                checklist
+            </span>
+        <button>
+    </header>
+    <main>
+        <div id="tasks">
+            <!-- <div class="task">
+                <input type="text" id="" disabled value="Fechar todas as interações abertas">
+                <div class="actionsTask">
+                    <button>
+                        <span class="material-symbols-rounded">
+                            delete
+                        </span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-rounded">
+                            edit
+                        </span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-rounded">
+                            Done
+                        </span>
+                    </button>
+                </div>
+            </div> -->
+        </div>
+        <div id="notes">
+            <!-- <div class="note">
+                <div class="actions-note">
+                    <button>
+                        <span class="material-symbols-rounded">
+                            delete
+                        </span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-rounded">
+                            edit
+                        </span>
+                    </button>
+                    <button>
+                        <span class="material-symbols-rounded">
+                            Done
+                        </span>
+                    </button>
+                </div>
+                <div class="note-body">
+                    <h3>Então né...</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio optio qui deleniti recusandae ea nihil aliquid illo fugit iure provident!</p>
+                </div>
+                <div class="note-footer">
+                    <div class="note-date">12:01 | 27/09/2023</div>
+                </div>
+            </div> -->
+        </div>
+
+        <div id="menu">
+            <button id="menuIcon">
+                <span class="material-symbols-rounded">
+                    clear_all
+                </span>
+            </button>
+            <div id="menuOptions">
+                <button id="btnNewTask">
+                    <span class="material-symbols-rounded">
+                        add_task
+                    </span>
+                </button>
+                <button id="btnNewNote">
+                    <span class="material-symbols-rounded">
+                        add_box
+                    </span>
+                </button>
+                <button id="btnBack">
+                    <span class="material-symbols-rounded">
+                        arrow_forward_ios
+                    </span>
+                </button>
+            </div>
+        </div>
+        <div id="newTask">
+            <input id="newTaskInput" type="text">
+            <button id="newTaskBtn">
+                <span class="material-symbols-rounded">
+                    send
+                </span>
+            </button>
+        </div>
+        <div id="newNote" resize="none">
+            <input type="text" name="" id="newNoteTitle" placeholder="Titúlo">
+            <textarea name="" id="newNoteText" cols="30" rows="10" placeholder="Não posso me esquecer de..."></textarea>
+            <div id="hourDateNote">
+                <input type="time" name="" id="newNotehour">
+                <input type="date" name="" id="newNoteDate">
+            </div>
+            <button id="newNoteBtn">
+                <span class="material-symbols-rounded">
+                    send
+                </span>
+            </button>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./twoTypes.js"></script>
+    <script src="./tasks.js"></script>
+    <script src="./notes.js"></script>
+    <script src="./animations.js"></script>
+</body>
+</html>

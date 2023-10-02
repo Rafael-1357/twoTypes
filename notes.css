@@ -1,0 +1,159 @@
+#notes{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: start;
+    align-content: flex-start;
+    gap: 20px;
+}
+
+.note{
+    width: calc(50% - 10px);
+    height: auto;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.actions-note{
+    width: 100%;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.actions-note button{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.actions-note button span{
+    font-size: 26px;
+}
+
+.note-body{
+    font-size: 19px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.note-body input{
+    height: 40px;
+    color: #000;
+    font-size: 1.17em;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+}
+
+.note-body textarea{
+    color: #000;
+    font-size: 19px;
+    border-radius: 4px;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+.note-footer{
+    width: 100%;
+    border-top: 1px solid #c1c1c1;
+}
+
+.note-date{
+    color: #726e6e;
+    font-size: 17px;
+    text-align: right;
+    padding-top: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+#newNote{
+    width: 0px;
+    height: 40px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 1px #1d1d1db9;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow: hidden;
+}
+
+#newNoteTitle{
+    width: 100%;
+    height: 40px;
+    font-size: 19px;
+    padding: 0 7px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newNoteText{
+    width: 100%;
+    height: 160px;
+    font-size: 19px;
+    padding: 7px 7px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    overflow-y: auto;
+}
+
+#hourDateNote{
+    width: calc(100% - 55px);
+    display: flex;
+    gap: 15px;
+}
+
+#newNotehour{
+    width: 40%;
+    height: 40px;
+    font-size: 19px;
+    padding: 0 7px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newNoteDate{
+    width: 60%;
+    height: 40px;
+    font-size: 19px;
+    padding: 0 7px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    outline: none;
+}
+
+#newNoteBtn{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+#newNoteBtn span{
+    color: #fff;
+    font-size: 26px;
+}
+
+

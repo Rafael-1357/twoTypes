@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border: 1px solid blueviolet;
+    border-radius: 12px;
+}
+
+#new{
+    display: flex;
+    justify-content: space-between;
+}
+
+#new-Input{
+    width: calc(100% - 100px);
+    height: 30px;
+    padding: 7px;
+    border: 1px solid blueviolet;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#new-Button{
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 0 4px 4px 0;
+    background-color: blueviolet;
+}
+
+#tasks{
+    width: 100%;
+    height: calc(100% - 50px);
+    margin-top: 20px;
+    overflow-y: auto;
+}
+
+.task{
+    border: 1px solid blueviolet;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-Input{
+    width: 100%;
+    font-size: 16px;
+    margin-right: 7px;
+    padding: 7px;
+}
+
+.task-Buttons{
+    display: flex;
+    gap: 7px;
+}
+
+.task-Button{
+    color: #fff;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    cursor: pointer;
+}
